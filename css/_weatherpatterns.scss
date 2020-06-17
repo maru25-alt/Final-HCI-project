@@ -1,0 +1,38 @@
+.description{
+    border:  1px dotted #000;
+    padding: 0 1em;
+    background-color: linen;
+    font-size: 0.7em;
+    height: 30vh;
+  }
+
+  .continents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .continent{
+       width: 7em;
+       height: 3em;
+      border-radius: 15px;
+      margin: 0 0.5em 0 0;
+      border: saddlebrown 1px solid;
+      text-align: center;
+       background-color: $primary-color;
+       color: #fff;
+      position: relative;
+    }
+    .continent:hover{
+      background-color: $icon_color;
+    }
+    .continent:focus{
+      background-color: $icon_color;
+    }
+  }
+
+  .selectedBar:hover{
+    fill: $primary-color;
+  }
+
+  .selectedBar:focus{
+    fill:red;}

@@ -1,0 +1,126 @@
+.map-container {
+    background: #08efffb9;
+}
+
+.country {
+    fill: rgb(37, 36, 36);
+    stroke: #e3e3e3;
+    stroke-width: 0.5;
+}
+
+.selected {
+    fill: red;
+}
+
+.country-label {
+    //color: #fff;
+    font-size: 0.8em;
+    fill: $icon_color;
+    width: 5px;
+    border: 1px solid red;
+}
+
+.city-circle {
+    fill: $icon_color;
+    stroke: red;
+}
+.temperature-label {
+    fill: rgb(226, 226, 226);
+    font-size: 0.6em;
+    border: 1em solid red;
+    transform: translate(-20px, 15px);
+    max-width: 1px;
+    background-color: green;
+}
+
+//    options
+
+.onoffswitch {
+    position: relative;
+    width: 80px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #999999;
+    border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 35px;
+    margin-bottom: 0px;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: $primary_color;
+    color: #ffffff;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #eeeeee;
+    color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block;
+    width: 18px;
+    margin: 6px;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #999999;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 10px;
+}
+
+
+.map-container {
+    position: relative;
+
+    .btn-group-vertical {
+        position: absolute;
+
+        button {
+            background-color: aliceblue;
+            z-index: 10;
+        }
+    }
+}
+
+
+.headings h2 button{
+    color: $primary_color;
+    font-size: large;
+}

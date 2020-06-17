@@ -1,0 +1,137 @@
+.entire_week_container {
+    width: 100%;
+
+    .entire_week {
+        border: 1px solid #e3e3e3;
+        display: grid;
+        grid-template-areas:
+           ". body body body body body  body body body body body body body"
+           ". body body body body body  body body body body body body body"
+            "header body body body body body body  body body body body body body"
+            "header body body body body body body  body body body body body body";
+        margin-top: 1em;
+        color: #fff;
+
+        & > div {
+            padding: 0.2em;
+        }
+    }
+    .week-temp {
+        grid-area: header;
+
+        div h6 {
+            color: $red_color;
+        }
+    }
+
+    .whole-week {
+        grid-area: body;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+
+        .week_day > div {
+            padding: 0.5em 0.7em;
+        }
+        .icon_container {
+            padding: 0em;
+            color: $icon_color;
+        }
+    }
+}
+
+.home{
+    border: 1px solid red;
+    margin-top: 3%;
+    background-color:  $background_color;
+    height: 100%;
+    
+}
+
+.graph-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .btns{
+        width: 8em;
+        height: 3em;
+        border-radius: 2px;
+        text-align: center;
+        color: #333;
+       
+    }
+
+    .temp-btn{
+        background-color: $icon_color;
+        margin-bottom: 0.5em;
+    }
+    .rain-btn{
+        background-color: $primary-color;
+    }
+}
+
+
+.line-path{
+    fill: none;
+    stroke-width: 4;
+      
+  }
+  
+  .title{
+      font-size: 1.7em;
+  }
+  
+  .tick text{
+    font-size:1.5em;
+    fill:#8E8883;
+  }
+  
+  .tick line{
+   stroke: #C0C0BB;
+  }
+  
+  .axis-label{
+  font-size:1.5em;
+   fill: #8E8883
+  }
+  
+  body {
+    font: 10px sans-serif;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  
+  .x.axis path {
+    display: none;
+  }
+  
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+
+
+
+  .buttons_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 5em;
+
+      .input-btn{
+          background-color: $primary-color;
+          width: 10em;
+          padding: 0.5em 0;
+          margin-bottom: 2em;
+          text-align: center;
+          border-radius: 5px;
+      }
+  }
